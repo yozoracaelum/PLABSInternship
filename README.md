@@ -1,4 +1,4 @@
-# PLABSInternship
-Julian Evan Chrisnanto\n
-Pembelajaran Materi selama magang di PLABS\n
+# PLABS Internship
+Julian Evan Chrisnanto <br/>
+Pembelajaran Materi selama magang di PLABS <br/>
 Proyek-proyek yang dikerjakan
