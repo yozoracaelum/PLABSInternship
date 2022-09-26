@@ -1,0 +1,356 @@
+body {
+    /*height: 100vh;*/
+    width: 100%;
+    background-image: url(bgimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'LT Internet', sans-serif;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+    position: fixed;
+    background-color: rgba(27, 25, 25, 0.822);
+    width: 100%;
+    z-index: 50;
+}
+.logo {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 1px;
+    /*cursor: pointer;*/
+}
+span {
+    color: gold;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 1.0;
+    transition: .3s;
+}
+nav ul li a:hover{
+    color: rgb(245, 87, 87);
+    transition: .4s;
+}
+.content {
+    position: absolute;
+    top: 235%;
+    left: 18%;
+    float: left;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: .3s;
+    padding-left: 0px;
+    padding-right: 110px;
+    padding-bottom: 100px;
+    scrollbar-color: #6969dd #e0e0e0;
+    scrollbar-width: thin;
+} 
+.content .about p{
+    color: white;
+    font-size: 20px;
+}
+.content .about img{
+    width: 250px;
+    float: left;
+    padding-right: 10px;
+    margin-right: 100px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    opacity: 1.0;
+    transition: .3s;
+}
+.content .about img:hover{
+    transform: scale(105%);
+    opacity: 0.5;
+    transition: .3s
+}
+.content .about{
+    padding-top: 100px;
+}
+h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 60px;
+}
+.content #content h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+h4 {
+    color: rgb(247, 202, 202);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+h2 {
+    color: white;
+}
+.about h4 {
+    color: rgb(247, 202, 202);
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-style: italic;
+}
+.rightcontent {
+    position: absolute;
+    bottom: 2vh;
+    right: 0vh;
+    padding: 200px;
+    display: flex;
+    align-items: center;
+}
+.rightcontent img{
+    opacity: 1.0;
+    transition: .3s;
+}
+.rightcontent img:hover{
+    transform: scale(105%);
+    opacity: 0.5;
+    transition: .3s;
+}
+.content .skill{
+    padding-top: 100px;
+}
+.content .skill p{
+    color: white;
+    font-size: 20px;
+}
+.content .skill .prolang img{
+    /*width: 250px;*/
+    float: left;
+    padding-right: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    opacity: 1.0;
+    transition: .3s;
+    text-align: center;
+}
+.content .skill .prolang img:hover{
+    transform: rotate(15deg) scale(115%);
+    opacity: 0.5;
+    transition: .5s;
+}
+.content .skill .gameengine img{
+    float:left;
+    padding-right: 10px;
+    padding-bottom: 50px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    opacity: 1.0;
+    transition: .3s;
+    text-align: center;
+}
+.content .skill .gameengine img:hover{
+    transform: scale(105%);
+    opacity: 0.5;
+    transition: .3s;
+}
+.content .skill h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 60px;
+}
+.content .skill h3 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+}
+.content .skill h4 {
+    color: rgb(247, 202, 202);
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-style: italic;
+}
+.content .skill h2 {
+    color: white;
+}
+.content .project{
+    padding-top: 200px;
+    padding-right: 100px;
+    text-align: center;
+}
+.content .project p{
+    color: white;
+    font-size: 20px;
+}
+
+.content .project h3 {
+    color: gold;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+.content .project h4 {
+    color: rgb(247, 202, 202);
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-style: italic;
+}
+.content .project .ss img{
+    padding-top: 10px;
+}
+.content .project .ss img:hover{
+    padding-top: 0px;
+    border: 5px solid #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: .5s;
+}
+.content .project h3 .link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+.content .project h3 .link:hover{
+    color: rgb(245, 87, 87);
+    transition: .4s;
+}
+.content .contact {
+    text-align: center;
+    padding-right: 100px;
+}
+.content .contact span {
+    color: gold;
+    width: 250px;
+    height: 300px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 120px;
+    display: inline-block;
+    text-align: center;
+}
+.content .contact span .ss{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.content .contact p{
+    color: white;
+}
+.content .contact span .ss img{
+    transition: .3s;
+}
+.content .contact span .ss img:hover{
+    transform: scale(110%);
+    transition: .3s;
+}
+.content .contact h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 60px;
+}
+.content .contact h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+.content .contact h4 {
+    color: rgb(247, 202, 202);
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-style: italic;
+}
+.content .contact h2 {
+    color: gold;
+}
+
+@media only screen and (max-width:700px){
+    nav h2 {
+        color: white;
+        position: absolute;
+        top: 15%;
+        left: 5%;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 45px;
+        padding-left: 8%;
+        padding-right: 8%;
+        position: fixed;
+        background-color: rgba(27, 25, 25, 0.822);
+        width: 100%;
+        height: 150px;
+        z-index: 50;
+    }
+    nav ul{
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: inline-flex;
+    }
+    .content{
+        width: 500px;
+        position: relative;
+        top: 2150px;
+        left: 8%;        
+        overflow: visible;
+        padding-left: 0px;
+        transition: .3s;
+    }
+    .rightcontent{
+        width: 75%;
+        position: absolute;
+        left: 35%;
+        top: 10%;
+    }
+    .content .project{
+        text-align: left;
+    }
+    .rightcontent img {
+        left: 50%;
+        float: none;
+        transition: .3s;
+    }
+    .content .skill{
+        padding-bottom: 100px;
+    }
+    .content .about img{
+        float: none;
+    }
+    .content .project .ss img{
+        width: 100%;
+    }
+    .content .project .iframe-container iframe{
+        position: relative;
+        width: 400px;
+        height: 250px;
+    }
+    .content .contact span{
+        padding-top: 0px;
+        height: 10px;
+    }
+    .content .contact span .ss{
+        text-align: center;
+        margin-bottom: 0px;
+    }
+}
